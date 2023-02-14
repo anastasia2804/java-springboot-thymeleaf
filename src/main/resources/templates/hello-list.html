@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <ul>
+      <th:block th:each = "el: ${numbers}">
+            <li th:if = "${el > 0 and el%2 == 0}" th:text = "${el}"></li>
+      </th:block>
+   </ul>
+</body>
+</html>
